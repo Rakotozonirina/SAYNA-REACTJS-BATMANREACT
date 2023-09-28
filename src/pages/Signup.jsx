@@ -14,6 +14,7 @@ return (
                 <p>
                     Vous déja un compte? <Link to='/login'>Connectez vous ici!</Link>
                 </p>
+                Form
             </div>
         </article>
     </>

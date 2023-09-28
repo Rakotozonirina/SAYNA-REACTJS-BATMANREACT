@@ -9,10 +9,12 @@ return (
         <Navbar/>
         <div className='bg-signup'></div>
         <article className='bg_article'>
-            <h2>Inscription</h2>
-            <p>
-                Vous déja un compte? <Link to='/login'>Connectez vous ici!</Link>
-            </p>
+            <div className='bg_div'>
+                <h2>Inscription</h2>
+                <p>
+                    Vous déja un compte? <Link to='/login'>Connectez vous ici!</Link>
+                </p>
+            </div>
         </article>
     </>
 )

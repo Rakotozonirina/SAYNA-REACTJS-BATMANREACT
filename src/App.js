@@ -6,6 +6,7 @@ import Eshop from './pages/Eshop';
 import Compte from './pages/Compte';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
+import Notfound from './pages/Notfound';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/compte' element={ <Compte/> }/>
         <Route path='/signup' element={ <Signup/> }/>
         <Route path='/login' element={ <Login/> }/>
+        <Route path='*' element={ <Notfound/>} />
       </Routes>
     </Router>
   );

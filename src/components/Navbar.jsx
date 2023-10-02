@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Logo from '../photos/logohome.png'
 import { useLocation } from 'react-router-dom'
 import '../styles/Navbar.css'
@@ -11,16 +11,19 @@ const navStyle = {
     top:"0%",
     left:"0%",
     padding: "0 5rem",
-    border: "1px solid white"
+    zIndex: '10'
 }
 
 const divStyle = {
-    border: "1px solid white",
+    borderLeft: "1px solid rgba(238, 238, 238, 0.5)",
+    borderRight: "1px solid rgba(238, 238, 238, 0.5)",
+    borderBottom: "1px solid rgba(238, 238, 238, 0.5)",
     width: "100%",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
     height: "10dvh",
+    padding: "0 5rem"
 }
 
 const ulStyle = {

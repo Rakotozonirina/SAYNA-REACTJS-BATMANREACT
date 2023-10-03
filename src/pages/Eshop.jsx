@@ -5,6 +5,7 @@ import Icons from '../components/Icons'
 import {Link as ScrollLink, Element } from 'react-scroll'
 import Fleche from '../photos/logos/flèche_down_header.png'
 import Cart from '../photos/icons/icone_1.png'
+import CustomSelect from '../components/CustomSelect'
 
 const colorText = {
     color: "white",
@@ -65,6 +66,9 @@ return (
                                 <option value="100" label="100"></option>
                                 <option value="200" label="200€"></option>
                             </datalist>
+                        </section>
+                        <section>
+                            <CustomSelect />
                         </section>
                     </section>
                     <section className='contentCard'></section>

@@ -15,8 +15,6 @@ const navStyle = {
 }
 
 const divStyle = {
-    borderLeft: "1px solid rgba(238, 238, 238, 0.5)",
-    borderRight: "1px solid rgba(238, 238, 238, 0.5)",
     borderBottom: "1px solid rgba(238, 238, 238, 0.5)",
     width: "100%",
     display: "flex",

@@ -1,6 +1,10 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import '../styles/Eshop.css'
+import Icons from '../components/Icons'
+import {Link as ScrollLink, Element } from 'react-scroll'
+import Fleche from '../photos/logos/flèche_down_header.png'
+import Cart from '../photos/icons/icone_1.png'
 
 const colorText = {
     color: "white",
@@ -22,14 +26,35 @@ function Eshop() {
 return (
     <main className="mainStyle">
         <Navbar/>
-        <div style={colorText}>
-            <article style={articleStyle}>
-                <h1>récuperez le flow de <br /> batman avec notre e-shop!</h1>
-            </article>
-            <section>
-
+        <Element name='top'>
+            <div style={colorText}>
+                <article style={articleStyle}>
+                    <h1>récuperez le flow de <br /> batman avec notre e-shop!</h1>
+                </article>
+                <section>
+                    <Icons/>
+                </section>
+            </div>
+        </Element>
+        <Element name='showResult'>
+            <section className='showResult'>
+                <div className='cartDiv'>
+                    <section className='sectionFirst'>
+                        <ScrollLink to="showResult" spy={true} smooth={true} duration={500}>
+                            <img src={Fleche} alt="flèche down" />
+                        </ScrollLink>
+                    </section>
+                    <div className='DivTwo'>
+                        <article>
+                            <h2>Filtres</h2>
+                        </article>
+                        <section>
+                            <img src={Cart} alt="cart" />
+                        </section>
+                    </div>
+                </div>
             </section>
-        </div>
+        </Element>
     </main>
 )
 }

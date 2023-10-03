@@ -4,3 +4,30 @@
     height: 100dvh;
     padding: 0 5rem;
 }
+.showResult{
+    border-left: 1px solid rgba(238, 238, 238, 0.5);
+    border-right: 1px solid rgba(238, 238, 238, 0.5);
+    width: 100%;
+    height: 100dvh;
+}
+.cartDiv{
+    width: 100%;
+    height: 25dvh;
+    display: grid;
+    grid-template-rows: 15dvh 10dvh;
+}
+.sectionFirst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DivTwo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+.DivTwo article h2{
+    color: rgba(238, 238, 238, 0.5);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

@@ -8,6 +8,7 @@ import Fleche from '../photos/logos/flèche_down_header.png'
 import Cart from '../photos/icons/icone_1.png'
 import CustomSelect from '../components/CustomSelect'
 import AnotherSelect from '../components/AnotherSelect'
+import Card from '../components/Card'
 
 const colorText = {
     color: "white",
@@ -82,7 +83,15 @@ return (
                             <AnotherSelect/>
                         </section>
                     </section>
-                    <section className='contentCard'></section>
+                    <section className='contentCard'>
+                        <section className='contentTrier'>
+                            <h2 className='result-one'>Résultat: 122</h2>
+                            <p className='result-two'> Trier par <span> <FaAngleDown className='icon'/> </span></p>
+                        </section>
+                        <section className='content-cards'>
+                            <Card/>
+                        </section>
+                    </section>
                 </section>
             </section>
         </Element>

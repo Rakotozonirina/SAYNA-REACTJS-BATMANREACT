@@ -36,9 +36,9 @@
     height: 175dvh;
     display: grid;
     grid-template-columns: 30% 70%;
+    padding: 0 0.5em;
 }
 .contentDropdown{
-    border: 1px solid darkred;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -62,4 +62,16 @@ datalist{
 input[type="range"]{
     width: 100%;
     accent-color: darkred;
+}
+.color{
+    width: 100%;
+    height: 10dvh;
+}
+.contentColor{
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 1.2em 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }

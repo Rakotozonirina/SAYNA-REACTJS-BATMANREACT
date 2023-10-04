@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { FaAngleDown } from 'react-icons/fa6'
 import '../styles/CustomSelect.css'
 
 function CustomSelect() {
@@ -23,13 +24,15 @@ return (
     <div className="custom-selected">
         <div className="selected-categorie" onClick={toggleDropDown}>
             Catégorie
-            <span> v </span>
+            <span> <FaAngleDown/> </span>
         </div>
         <ul className={`categorie ${isOpen ? 'open' : ''}`}>
             {categories.map((categorie, index) => (
                 <li key={index} onClick={() => toggleCategorie(categorie)}>
-                    <input type='checkbox' checked={selectedCategorie.includes(categorie)} readOnly />
-                    {categorie}
+                    <div>
+                        <input type='checkbox' checked={selectedCategorie.includes(categorie)} readOnly />
+                        {categorie}
+                    </div>
                     <span>(123)</span>
                 </li>
             ))}

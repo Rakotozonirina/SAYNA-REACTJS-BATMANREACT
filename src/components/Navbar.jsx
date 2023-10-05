@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../photos/logohome.png'
 import { useLocation } from 'react-router-dom'
@@ -6,7 +6,6 @@ import '../styles/Navbar.css'
 
 const navStyle = {
     width: "100dvw",
-    background: "transparent",
     position: "fixed",
     top:"0%",
     left:"0%",
@@ -40,6 +39,26 @@ const linkStyle = {
 }
 
 function Navbar() {
+    const [scrolling, setScrolling] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    },[]);
+
+    const handleScroll = () => {
+        // Check the scroll position
+        if (window.scrollY > 100) {
+          // Set scrolling to true when scrolling down
+            setScrolling(true);
+        } else {
+          // Set scrolling to false when at the top of the page
+            setScrolling(false);
+        }
+    };
+
     //assigning location variable
     const location = useLocation();
 
@@ -49,7 +68,7 @@ function Navbar() {
     //Javascript split method to get the name of the path in array
     const splitLocation = pathname.split("/");
 return (
-    <nav style={navStyle}>
+    <nav style={navStyle} className={`navStyle ${scrolling ? 'scrolled' : ''}`}>
         <div style={divStyle}>
             <Link to="/">
                 <img src={Logo} alt="logo" />

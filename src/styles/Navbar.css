@@ -1,3 +1,12 @@
 .active a{
     border-bottom: 2px solid white;
 }
+.navStyle{
+    background-color: transparent;
+}
+.navStyle.scrolled{
+    background-color: white;
+}
+.navStyle.scrolled div ul li{
+    color: black !important;
+}

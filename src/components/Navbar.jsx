@@ -5,28 +5,12 @@ import { useLocation } from 'react-router-dom'
 import '../styles/Navbar.css'
 
 const navStyle = {
-    width: "100dvw",
+    width: "100%",
     position: "fixed",
     top:"0%",
     left:"0%",
     padding: "0 5rem",
     zIndex: '10'
-}
-
-const divStyle = {
-    borderBottom: "1px solid rgba(238, 238, 238, 0.5)",
-    width: "100%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    height: "10dvh",
-    padding: "0 5rem"
-}
-
-const ulStyle = {
-    textTransform: "uppercase",
-    display: "flex",
-    listStyleType: "none"
 }
 
 const linkStyle = {
@@ -69,11 +53,11 @@ function Navbar() {
     const splitLocation = pathname.split("/");
 return (
     <nav style={navStyle} className={`navStyle ${scrolling ? 'scrolled' : ''}`}>
-        <div style={divStyle}>
+        <div className='divStyle'>
             <Link to="/">
                 <img src={Logo} alt="logo" />
             </Link>
-            <ul style={ulStyle}>
+            <ul className='ulStyle'>
                 <li className={splitLocation[1] === "" ? "active" : ""}>
                     <Link to="/" style={linkStyle}>home</Link>
                 </li>

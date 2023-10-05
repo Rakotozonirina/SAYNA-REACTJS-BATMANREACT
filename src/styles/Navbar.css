@@ -5,8 +5,29 @@
     background-color: transparent;
 }
 .navStyle.scrolled{
-    background-color: white;
+    background-color: darkred;
 }
-.navStyle.scrolled div ul li{
-    color: black !important;
+.divStyle{
+    border-bottom: 1px solid rgba(238, 238, 238, 0.5);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    height: 10dvh;
+}
+.ulStyle{
+    text-transform: uppercase;
+    display: flex;
+    list-style-type: none;
+}
+@media (min-width: 640px) and (max-width:1080px){
+    .ulStyle{
+        display: none;
+    }
+}
+@media (min-width: 0px) and (max-width: 640px){
+    .ulStyle{
+        display: none;
+    }
 }

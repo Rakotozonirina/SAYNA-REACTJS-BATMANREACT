@@ -1,7 +1,9 @@
 import React from 'react'
 import ArticleOne from '../photos/articles/article_1.png'
 import ArticleTwo from '../photos/articles/article_2.png'
+import { FaRegHeart } from "react-icons/fa";
 import ArticleThree from '../photos/articles/article_3.png'
+import ArticleFour from '../photos/articles/article_4.png'
 import '../styles/Card.css'
 
 const cardDatas = [
@@ -10,7 +12,8 @@ const cardDatas = [
         image: ArticleOne,
         alt: "article one",
         title: 'Sweat “why so serious”',
-        prix: "55€ 32€",
+        prix: "55€",
+        promoprix: "32€",
         uniqueFeature: true,
     },
     {
@@ -18,7 +21,8 @@ const cardDatas = [
         image: ArticleTwo,
         alt: "article two",
         title: 'Horloge',
-        prix: "16€ 8€",
+        prix: "16€",
+        promoprix: "8€",
         uniqueFeature: false,
     },
     {
@@ -26,8 +30,18 @@ const cardDatas = [
         image: ArticleThree,
         alt: "article three",
         title: 'Mug',
-        prix: "12€ 9€",
+        prix: "12€",
+        promoprix: "9€",
         uniqueFeature: true,
+    },
+    {
+        id: 4,
+        image: ArticleFour,
+        alt: "article four",
+        title: 'Mug voyage',
+        prix: "39€",
+        promoprix: "39€",
+        uniqueFeature: false,
     }
 ];
 
@@ -45,10 +59,11 @@ return (
                         </div>) : (
                             <div></div>
                         )}
+                    <FaRegHeart className='heart'/>
                 </div>
                 <article className='article-image'>
                     <h3>{Data.title}</h3>
-                    <p>{Data.prix}</p>
+                    <p><del>{Data.prix}</del> {Data.promoprix}</p>
                 </article>
             </div>
             <button className='btn'>

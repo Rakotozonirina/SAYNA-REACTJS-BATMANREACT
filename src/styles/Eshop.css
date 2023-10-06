@@ -4,6 +4,9 @@
     height: 100dvh;
     padding: 0 5rem;
 }
+.colorText{
+    color: white;
+}
 .showResult{
     border-left: 1px solid rgba(238, 238, 238, 0.5);
     border-right: 1px solid rgba(238, 238, 238, 0.5);
@@ -103,4 +106,15 @@ input[type="range"]{
     justify-content: center;
     align-items: center;
     gap: 4em;
+}
+@media (min-width: 640px) and (max-width:1080px){
+    .showResult{
+        height: 360dvh;
+    }
+    .dropdownResult{
+        display: flex;
+        flex-direction: column;
+        height: 335dvh;
+        padding: 0 4em;
+    }
 }

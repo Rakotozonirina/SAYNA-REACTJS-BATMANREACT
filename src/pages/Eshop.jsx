@@ -11,7 +11,6 @@ import AnotherSelect from '../components/AnotherSelect'
 import Card from '../components/Card'
 
 const colorText = {
-    color: "white",
     fontFamily: "system ui, sans-serif",
     width: "100%",
     height: "100dvh",
@@ -31,7 +30,7 @@ return (
     <main className="mainStyle">
         <Navbar/>
         <Element name='top'>
-            <div style={colorText}>
+            <div style={colorText} className='colorText'>
                 <article style={articleStyle}>
                     <h1>récuperez le flow de <br /> batman avec notre e-shop!</h1>
                 </article>

@@ -12,3 +12,9 @@
         right: 3%;
     }
 }
+@media (min-width: 0px) and (max-width:640px){
+    .bg_icons{
+        transform: scale(0.6);
+        right: -3%;
+    }
+}

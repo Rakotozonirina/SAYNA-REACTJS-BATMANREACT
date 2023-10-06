@@ -60,3 +60,13 @@
     width: 1.4em;
     height: 1.4em;
 }
+@media (min-width: 640px) and (max-width:1080px){
+    .card-contenaire{
+        width: 42%;
+    }
+}
+@media (min-width: 0px) and (max-width:640px){
+    .card-contenaire{
+        width: 100%;
+    }
+}

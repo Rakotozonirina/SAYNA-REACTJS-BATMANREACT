@@ -3,6 +3,12 @@
 }
 .navStyle{
     background-color: transparent;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 0 5rem;
+    z-index: 10;
 }
 .navStyle.scrolled{
     background-color: darkred;
@@ -35,7 +41,6 @@
 }
 @media (min-width: 640px) and (max-width:1080px){
     .ulStyle.open{
-        /*display: none;*/
         width: 100%;
         height: 20dvh;
         display: flex;
@@ -56,10 +61,26 @@
     }
 }
 @media (min-width: 0px) and (max-width: 640px){
-    .ulStyle{
+    .ulStyle.open{
+        width: 100%;
+        height: 20dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+        position: absolute;
+        bottom: -200%;
+        right: 0%;
+        background-color: darkred;
+    }
+    .ulStyle.closed{
         display: none;
     }
     .content-burger-btn{
         display: block;
+    }
+    .navStyle{
+        padding: 0 2rem;
     }
 }

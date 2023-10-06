@@ -6,6 +6,18 @@
 }
 .colorText{
     color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    height: 100dvh;
+    border-left: 1px solid rgba(238, 238, 238, 0.5);
+    border-right: 1px solid rgba(238, 238, 238, 0.5);
+    padding: 0 5rem;
+    display: flex;
+    align-items: center;
+}
+.articleStyle{
+    text-transform: uppercase;
+    font-size: 2rem;
 }
 .showResult{
     border-left: 1px solid rgba(238, 238, 238, 0.5);
@@ -116,5 +128,30 @@ input[type="range"]{
         flex-direction: column;
         height: 335dvh;
         padding: 0 4em;
+    }
+}
+@media (min-width: 0px) and (max-width:640px){
+    .mainStyle{
+        padding: 0 2rem;
+    }
+    .articleStyle{
+        font-size: 1.5rem;
+    }
+    .showResult{
+        height: 660dvh;
+    }
+    .dropdownResult{
+        display: flex;
+        flex-direction: column;
+        height: 635dvh;
+        padding: 0 3em;
+    }
+    .content-cards{
+        height: 335dvh;
+        display: grid;
+    }
+    .contentTrier{
+        padding: 0;
+        margin: 3em 0;
     }
 }

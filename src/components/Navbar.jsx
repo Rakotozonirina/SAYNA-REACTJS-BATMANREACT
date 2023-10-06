@@ -5,15 +5,6 @@ import { useLocation } from 'react-router-dom'
 import '../styles/Navbar.css'
 import { FaBarsStaggered } from 'react-icons/fa6'
 
-const navStyle = {
-    width: "100%",
-    position: "fixed",
-    top:"0%",
-    left:"0%",
-    padding: "0 5rem",
-    zIndex: '10'
-}
-
 const linkStyle = {
     listStyle: "none",
     color: "white",
@@ -55,7 +46,7 @@ function Navbar() {
     //Javascript split method to get the name of the path in array
     const splitLocation = pathname.split("/");
 return (
-    <nav style={navStyle} className={`navStyle ${scrolling ? 'scrolled' : ''}`}>
+    <nav className={`navStyle ${scrolling ? 'scrolled' : ''}`}>
         <div className='divStyle'>
             <Link to="/">
                 <img src={Logo} alt="logo" />

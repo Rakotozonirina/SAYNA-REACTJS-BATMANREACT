@@ -10,28 +10,13 @@ import CustomSelect from '../components/CustomSelect'
 import AnotherSelect from '../components/AnotherSelect'
 import Card from '../components/Card'
 
-const colorText = {
-    fontFamily: "system ui, sans-serif",
-    width: "100%",
-    height: "100dvh",
-    borderLeft: "1px solid rgba(238, 238, 238, 0.5)",
-    borderRight: "1px solid rgba(238, 238, 238, 0.5)",
-    padding: "0 5rem",
-    display: "flex",
-    alignItems: "center"
-}
-const articleStyle = {
-    textTransform: "uppercase",
-    fontSize: "2rem"
-}
-
 function Eshop() {
 return (
     <main className="mainStyle">
         <Navbar/>
         <Element name='top'>
-            <div style={colorText} className='colorText'>
-                <article style={articleStyle}>
+            <div className='colorText'>
+                <article className='articleStyle'>
                     <h1>récuperez le flow de <br /> batman avec notre e-shop!</h1>
                 </article>
                 <section>

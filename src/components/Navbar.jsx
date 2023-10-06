@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Logo from '../photos/logohome.png'
 import { useLocation } from 'react-router-dom'
 import '../styles/Navbar.css'
+import { FaBarsStaggered } from 'react-icons/fa6'
 
 const navStyle = {
     width: "100%",
@@ -22,8 +23,10 @@ const linkStyle = {
     fontWeight: "bold"
 }
 
+
 function Navbar() {
     const [scrolling, setScrolling] = useState(false);
+    const [showMenu, setShowMenu] = useState(false);
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
@@ -57,7 +60,7 @@ return (
             <Link to="/">
                 <img src={Logo} alt="logo" />
             </Link>
-            <ul className='ulStyle'>
+            <ul className={`ulStyle ${showMenu ? 'open' : 'closed'}`}>
                 <li className={splitLocation[1] === "" ? "active" : ""}>
                     <Link to="/" style={linkStyle}>home</Link>
                 </li>
@@ -71,8 +74,10 @@ return (
                     <Link to="/compte" style={linkStyle}>mon compte</Link>
                 </li>
             </ul>
+            <div className='content-burger-btn' onClick={() => setShowMenu(!showMenu)}>
+                <FaBarsStaggered className='burger-btn' />
+            </div>
         </div>
-        
     </nav>
 )
 }

@@ -2,10 +2,10 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import '../styles/Eshop.css'
 import { FaAngleDown } from 'react-icons/fa6'
+import CartComponent from '../components/CartComponent'
 import Icons from '../components/Icons'
 import {Link as ScrollLink, Element } from 'react-scroll'
 import Fleche from '../photos/logos/flèche_down_header.png'
-import Cart from '../photos/icons/icone_1.png'
 import CustomSelect from '../components/CustomSelect'
 import AnotherSelect from '../components/AnotherSelect'
 import Card from '../components/Card'
@@ -37,7 +37,7 @@ return (
                             <h2>Filtres</h2>
                         </article>
                         <section>
-                            <img src={Cart} alt="cart" />
+                            <CartComponent productsCount={1} />
                         </section>
                     </div>
                 </div>

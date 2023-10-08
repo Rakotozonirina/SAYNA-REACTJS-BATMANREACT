@@ -62,7 +62,7 @@
 }
 @media (min-width: 640px) and (max-width:1080px){
     .card-contenaire{
-        width: 42%;
+        width: 60%;
     }
 }
 @media (min-width: 0px) and (max-width:640px){

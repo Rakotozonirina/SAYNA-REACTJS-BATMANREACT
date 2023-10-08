@@ -5,7 +5,8 @@ button{
     position: relative;
 }
 span{
-    color: white;
+    color: darkred;
+    font-size: 1.5em;
     font-weight: bold;
     position: absolute;
     top: -50%;

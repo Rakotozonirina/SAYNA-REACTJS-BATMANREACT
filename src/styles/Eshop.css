@@ -58,9 +58,6 @@
     flex-direction: column;
     gap: 1em;
 }
-.contentCard{
-    
-}
 .heading{
     color: white;
     font-size: 0.9em;
@@ -121,7 +118,7 @@ input[type="range"]{
 }
 @media (min-width: 640px) and (max-width:1080px){
     .showResult{
-        height: 360dvh;
+        height: 500dvh;
     }
     .dropdownResult{
         display: flex;
